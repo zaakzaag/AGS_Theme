@@ -1,0 +1,41 @@
+.section-about-desc {
+	font-family: "Myriad Pro Regular";
+	font-weight: normal;
+	font-size: 18px;
+	line-height: 28px;
+	font-weight: 400;
+
+	h2 {
+		font-size: 36px;
+		font-weight: 400;
+		margin-bottom: 35px;
+		padding-bottom: 25px;
+		box-sizing: border-box;
+		position: relative;
+
+		@media (max-width: 992px) {
+			margin-top: 40px;
+			font-size: 34px;
+		}
+
+		&::after {
+			content: "";
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			width: 140px;
+			height: 6px;
+			background: $agsBlue;
+		}
+	}
+	h4 {
+		font-size: 24px;
+		font-weight: bold;
+	}
+	.sub-footer {
+		background-color: #f0f0f0;
+		b {
+			color: $agsBlue;
+		}
+	}
+}

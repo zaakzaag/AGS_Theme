@@ -1,0 +1,26 @@
+.section-address {
+	font-family: "Myriad Pro Regular";
+	font-weight: normal;
+	.top-dot {
+		background-color: $agsBlack;
+		width: 48px;
+		height: 48px;
+		border-radius: 50%;
+		color: $agsWhite;
+		font-size: 25px;
+	}
+	address {
+		color: #8e8e8e;
+		line-height: 30px;
+		a {
+			transition: 0, 3s;
+			text-decoration: none;
+			color: #8e8e8e;
+
+			&:hover {
+				transition: 0, 3s;
+				color: #5c5c5c;
+			}
+		}
+	}
+}

@@ -1,0 +1,59 @@
+.section-header {
+	color: $agsWhite;
+	text-align: center;
+	display: block;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+	height: 100vh;
+	min-height: 500px;
+
+	&::before {
+		content: "";
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background: rgba(0, 0, 0, 0.77);
+		background-position: center;
+		z-index: 0;
+	}
+
+	h1 {
+		text-transform: uppercase;
+		text-align: center;
+		margin-bottom: 35px;
+		font-size: 64px;
+		font-weight: 400;
+
+		@media (max-width: 768px) {
+			font-size: 36px;
+		}
+	}
+
+	.test-class {
+		position: relative;
+	}
+
+	.btn-white {
+		font-size: 12px;
+		text-transform: uppercase;
+		background-color: $agsWhite;
+		border: transparent 2px solid;
+		border-radius: 0;
+		padding: 12px 45px;
+		margin: 5px;
+
+		&:hover {
+			border-radius: 0;
+			background-color: rgba(255, 255, 255, 0);
+			color: $agsWhite;
+			border: $agsWhite 2px solid;
+		}
+
+		&:focus {
+			box-shadow: none;
+		}
+	}
+}

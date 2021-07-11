@@ -1,0 +1,84 @@
+.section-footer {
+	font-family: "Myriad Pro Regular";
+	font-weight: normal;
+	margin-top: 50px;
+	.logo-column {
+		.footer-logo-link {
+			img {
+				width: 30%;
+			}
+		}
+	}
+
+	.copyrights {
+		text-align: center;
+		max-height: 130px;
+		background-color: $agsBlack;
+		color: $agsWhite;
+		padding-top: 40px;
+		padding-bottom: 40px;
+	}
+
+	.info-column {
+		h4 {
+			font-size: 30px;
+			letter-spacing: 3px;
+			margin-bottom: 30px;
+			@media (max-width: 768px) {
+				margin-top: 30px;
+			}
+		}
+		.info {
+			line-height: 20px;
+			color: $agsGrey;
+			.col {
+				margin-top: 10px;
+			}
+		}
+	}
+	.social-icons {
+		display: inline-flex;
+		position: relative;
+		padding-bottom: 40px;
+		.fa {
+			margin-top: 5px;
+			margin-right: 5px;
+			display: flex;
+			position: relative;
+			justify-content: center;
+			align-items: center;
+			padding: 20px;
+			font-size: 15px;
+			width: 40px;
+			height: 40px;
+			text-align: center;
+			text-decoration: none;
+			border-radius: 50%;
+			border: solid 1px $agsGrey;
+			transition: 0.3s;
+		}
+		.fa:hover {
+			opacity: 0.7;
+		}
+
+		.fa-facebook {
+			background: transparent;
+			color: $agsGrey;
+			transition: 0.3s;
+			&:hover {
+				color: $agsBlue;
+				border-color: $agsBlue;
+			}
+		}
+
+		.fa-linkedin {
+			background: transparent;
+			color: $agsGrey;
+			transition: 0.3s;
+			&:hover {
+				color: $agsBlue;
+				border-color: $agsBlue;
+			}
+		}
+	}
+}

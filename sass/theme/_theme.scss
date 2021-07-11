@@ -1,0 +1,73 @@
+// This is an empty scss file for your custom styles - Please add your super duper awesome mega design styles here
+@import "sections/section-products.scss";
+@import "sections/section-two-column.scss";
+@import "sections/section-header.scss";
+@import "sections/section-contact.scss";
+@import "sections/section-footer.scss";
+@import "sections/section-clients.scss";
+@import "sections/section-about-top.scss";
+@import "sections/section-about-desc.scss";
+@import "sections/section-address.scss";
+@import "sections/section-blog.scss";
+@import "comments.scss";
+@import "content-single.scss";
+@import "navbar.scss";
+@font-face {
+	font-family: "Myriad Pro Regular";
+	font-style: normal;
+	font-weight: normal;
+	src: local("Myriad Pro Regular"),
+		url("../fonts/MYRIADPRO-REGULAR.woff") format("woff");
+}
+
+.hide-entry-title {
+	.entry-title {
+		display: none;
+	}
+}
+
+.widget-area {
+	.widget {
+		font-family: "Myriad Pro Regular";
+		font-weight: normal;
+		padding-bottom: 50px;
+		.widget-title {
+			text-transform: uppercase;
+
+			font-size: 24px;
+			margin-bottom: 30px;
+		}
+		ul,
+		li {
+			padding-left: 0px;
+			list-style: none;
+			a {
+				color: $agsGrey;
+				transition: 0.3s;
+				&:hover {
+					transition: 0.3s;
+					color: #5a5a5a;
+					text-decoration: none;
+				}
+			}
+		}
+		li {
+			margin: 5px 0px;
+		}
+		.tagcloud {
+			a {
+				font-size: 14px;
+				color: $agsGrey;
+				padding: 8px;
+				border: solid 1px $agsGrey;
+				transition: 0.3s;
+				&:hover {
+					text-decoration: none;
+					transition: 0.3s;
+					color: $agsBlack;
+					border-color: $agsBlack;
+				}
+			}
+		}
+	}
+}

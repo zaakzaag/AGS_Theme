@@ -1,0 +1,134 @@
+.clients-section {
+	font-family: "Myriad Pro Regular";
+	font-weight: normal;
+	background-color: $agsBlack;
+	background-position: center;
+	background-size: cover;
+	padding-bottom: 100px;
+	.title {
+		padding-top: 200px;
+		padding-bottom: 200px;
+		justify-content: center;
+		position: relative;
+		h2 {
+			z-index: 10;
+			color: $agsWhite;
+			text-transform: uppercase;
+			font-size: 46px;
+			letter-spacing: 5px;
+			font-weight: 400;
+			@media (max-width: 768px) {
+				font-size: 8vw;
+			}
+		}
+
+		&::after {
+			content: "R";
+			position: absolute;
+			left: 50%;
+			top: 50%;
+			margin-left: -125px;
+			margin-top: -125px;
+			width: 250px;
+			height: 250px;
+			border-radius: 50%;
+			color: $agsBlack;
+			font-size: 300px;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+
+			font-family: "Times New Roman", sans-serif;
+			z-index: 0;
+
+			@media (max-width: 768px) {
+				margin-left: -75px;
+				margin-top: -75px;
+				width: 150px;
+				height: 150px;
+				font-size: 180px;
+			}
+		}
+
+		&::before {
+			z-index: 0;
+			content: "";
+			position: absolute;
+			left: 50%;
+			top: 50%;
+			margin-left: -125px;
+			margin-top: -125px;
+			width: 250px;
+			height: 250px;
+			border-radius: 50%;
+			background: $agsBlue;
+
+			@media (max-width: 768px) {
+				margin-left: -75px;
+				margin-top: -75px;
+				width: 150px;
+				height: 150px;
+			}
+		}
+	}
+	.slider-row {
+		padding-bottom: 100px;
+		.prev-button,
+		.next-button {
+			z-index: 12;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			position: absolute;
+			border: 1px solid $agsWhite;
+			border-radius: 50%;
+			height: 40px;
+			width: 40px;
+			color: $agsWhite;
+			top: 40%;
+			@media (max-width: 768px) {
+				visibility: hidden;
+			}
+		}
+		.prev-button {
+			left: 0px;
+		}
+		.next-button {
+			right: 0px;
+		}
+	}
+	.recomm-info {
+		color: $agsWhite;
+		position: relative;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		.top-dot {
+			background-color: #707070;
+			width: 56px;
+			height: 56px;
+			border-radius: 50%;
+		}
+		.recommendation-name {
+			padding-top: 25px;
+			text-transform: uppercase;
+			padding-bottom: 25px;
+		}
+		.recommendation-description {
+			padding-top: 25px;
+		}
+	}
+
+	.logos-row {
+		padding-top: 30px;
+		padding-bottom: 30px;
+		img {
+			@media (max-width: 576px) {
+				max-width: 50%;
+				height: auto;
+				padding-top: 40px;
+			}
+		}
+	}
+}

@@ -1,0 +1,39 @@
+#single-wrapper {
+	.entry-header {
+		img {
+			margin-bottom: 20px;
+		}
+		.entry-title {
+			margin-bottom: 20px;
+			font-size: 36px;
+			font-weight: 400;
+		}
+	}
+
+	.entry-content {
+		color: #959595;
+	}
+	.entry-footer {
+		text-decoration: underline;
+	}
+	blockquote {
+		p {
+			color: $agsBlack;
+			font-style: italic;
+			&::before {
+				font-size: 10px;
+				font-family: FontAwesome;
+				content: "\f10d \00a0\00a0\00a0\00a0";
+			}
+			&::after {
+				font-size: 10px;
+				font-family: FontAwesome;
+				content: "\00a0\00a0\00a0\00a0\f10e";
+			}
+		}
+		cite {
+			color: $agsBlack;
+			font-weight: 500;
+		}
+	}
+}

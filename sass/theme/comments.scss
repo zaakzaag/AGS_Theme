@@ -1,0 +1,140 @@
+.comments-area {
+	h2 {
+		font-size: 30px;
+		font-weight: 400;
+		margin-bottom: 25px;
+		padding-bottom: 15px;
+		box-sizing: border-box;
+		position: relative;
+		text-transform: uppercase;
+		@media (max-width: 992px) {
+			margin-top: 40px;
+			font-size: 34px;
+		}
+
+		&::after {
+			content: "";
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			width: 140px;
+			height: 6px;
+			background: $agsBlue;
+		}
+	}
+	.nav-next,
+	.nav-previous {
+		background: $agsBlack;
+		color: $agsBlack;
+		height: 55px;
+		display: flex;
+		align-items: center;
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+	ul,
+	li {
+		list-style-type: none;
+	}
+
+	.avatar {
+		background: gray;
+		border: none;
+
+		max-width: 80px;
+		border-radius: 50%;
+		@media (max-width: 992px) {
+			max-height: 30px;
+		}
+		img {
+			max-width: 80px;
+			border-radius: 50%;
+
+			@media (max-width: 992px) {
+				max-width: 30px;
+			}
+		}
+	}
+	.author-date {
+		.author-nick {
+			font-size: 24px;
+			letter-spacing: 1px;
+			padding-bottom: 5px;
+		}
+		.date {
+			color: $agsGrey;
+			font-size: 14px;
+		}
+	}
+	.comment-desc {
+		color: $agsGrey;
+		padding-left: 95px;
+		@media (max-width: 992px) {
+			padding-left: 45px;
+		}
+	}
+	.comment-reply-link {
+		text-decoration: none;
+		color: $agsBlack;
+		text-transform: uppercase;
+	}
+}
+
+.bg-color-comment-form {
+	background-color: #f9f9f9;
+	.comment-respond {
+		h3 {
+			font-size: 30px;
+			font-weight: 400;
+			margin-bottom: 35px;
+			padding-bottom: 15px;
+			box-sizing: border-box;
+			position: relative;
+			text-transform: uppercase;
+
+			@media (max-width: 992px) {
+				margin-top: 40px;
+				font-size: 34px;
+			}
+
+			&::after {
+				content: "";
+				position: absolute;
+				bottom: 0;
+				left: 0;
+				width: 140px;
+				height: 6px;
+				background: $agsBlue;
+			}
+			a {
+				text-transform: initial;
+				text-decoration: none;
+				color: $agsBlue;
+			}
+			small {
+				a {
+					text-transform: uppercase;
+				}
+
+				font-size: 16px;
+			}
+		}
+	}
+}
+.comment-form-row {
+	font-family: "Myriad Pro Regular";
+	font-weight: normal;
+	label {
+		color: $agsGrey;
+		text-transform: uppercase;
+		font-size: 14px;
+		textarea,
+		input {
+			margin-top: 10px;
+			font-size: 18px;
+			background-color: transparent;
+			border: none;
+			border-bottom: 1px solid $agsGrey;
+		}
+	}
+}
