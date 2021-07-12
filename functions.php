@@ -154,7 +154,7 @@ register_acf_block_types(){
 		array(
 			'name'              => 'products-section',
             'title'             => __('Products Section'),
-            'description'       => __('A custom testimonial block.'),
+            'description'       => __('A custom block shows products.'),
             'render_template'   => 'loop-templates/blocks/section-products.php',
             'category'          => 'formatting',
             'icon'              => 'admin-comments',
@@ -171,7 +171,7 @@ register_acf_block_types(){
 		array(
 			'name'              => 'clients-section',
             'title'             => __('Clients section'),
-            'description'       => __('A custom contact section block.'),
+            'description'       => __('A custom clients section block with slider.'),
             'render_template'   => 'loop-templates/blocks/section-clients.php',
             'category'          => 'formatting',
             'icon'              => 'admin-comments',
@@ -215,7 +215,7 @@ register_acf_block_types(){
 		array(
 			'name'              => 'about-section-desc',
             'title'             => __('Description Section for About'),
-            'description'       => __('A custom contact section block.'),
+            'description'       => __('A custom about section with description block.'),
             'render_template'   => 'loop-templates/blocks/section-about-desc.php',
             'category'          => 'formatting',
             'icon'              => 'admin-comments',
@@ -230,11 +230,26 @@ register_acf_block_types(){
 		array(
 			'name'              => 'address-section',
             'title'             => __('Address Section for Contact Page'),
-            'description'       => __('A custom contact section block.'),
+            'description'       => __('A custom address block for contact page'),
             'render_template'   => 'loop-templates/blocks/section-address.php',
             'category'          => 'formatting',
             'icon'              => 'admin-comments',
             'keywords'          => array( 'address-section', 'quote' ),
+
+		)
+		)
+};
+
+register_acf_block_types(){
+	acf_register_block_type(
+		array(
+			'name'              => 'case-study-block',
+            'title'             => __('Case Study block '),
+            'description'       => __('Block to show subpages for case study'),
+            'render_template'   => 'loop-templates/blocks/case-study-block.php',
+            'category'          => 'formatting',
+            'icon'              => 'admin-comments',
+            'keywords'          => array( 'case-study-block', 'quote' ),
 
 		)
 		)
