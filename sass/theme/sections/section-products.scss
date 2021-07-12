@@ -85,10 +85,20 @@ $btn_gray: #d4d4d4;
 		transition: 0.3s;
 		position: relative;
 
+		&.case-study {
+			height: 600px;
+			.item-miniature {
+				height: 505px;
+			}
+			.item-name {
+				background-color: $agsLightGray;
+			}
+		}
 		.item-miniature {
 			height: 295px;
 			background-position: center;
 			background-size: cover;
+			background-color: $agsGrey;
 		}
 
 		.item-name {
