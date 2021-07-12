@@ -263,8 +263,12 @@
 		}
 		.breadcrumb-header {
 			text-transform: uppercase;
+			span {
+				display: flex;
+				align-items: center;
+			}
 			i {
-				font-size: 10px;
+				font-size: 12px;
 			}
 			a {
 				color: $agsGrey;

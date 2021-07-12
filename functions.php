@@ -108,6 +108,10 @@ function get_breadcrumb() {
     }
 }
 
+function filter_wpseo_breadcrumb_separator($this_options_breadcrumbs_sep) {
+    return '&nbsp;&nbsp;<i class="fa fas fa-chevron-right"></i>&nbsp;&nbsp;';
+};
+add_filter('wpseo_breadcrumb_separator', 'filter_wpseo_breadcrumb_separator', 10, 1);
 
 function wpb_move_comment_field_to_bottom( $fields ) {
     $comment_field = $fields['comment'];

@@ -26,7 +26,11 @@ $first_letter = substr($title, 0, 1);
 					<div class="row page-header-titled text-uppercase d-flex align-items-center justify-content-center">
 						<div class="col-sm-5 col-6  background-letter" ><h1 data-letter="<?php echo $first_letter ?>"><?php echo $title ?></h1></div>
 						<div class="col-sm-5 col-6 position-relative">
-							<div class="breadcrumb-header d-flex align-items-center justify-content-end"><?php get_breadcrumb(); ?>&nbsp;&nbsp;<i class="fa fa-chevron-right" aria-hidden="true"></i>&nbsp;&nbsp;BLOG</div>
+							<div class="breadcrumb-header d-flex align-items-center justify-content-end">							
+								<?php
+								if ( function_exists('yoast_breadcrumb') ) {
+								yoast_breadcrumb(  );
+								}?></div>
 						</div>
 					</div>
 				</div>
