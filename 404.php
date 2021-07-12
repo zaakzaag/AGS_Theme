@@ -14,7 +14,7 @@
 // Exit if accessed directly.
 defined( 'ABSPATH' ) || exit;
 
-get_header();
+get_header('stay');
 $title = $pagename;
 $first_letter = substr($title, 0, 1);
 ?>
