@@ -254,3 +254,31 @@ register_acf_block_types(){
 		)
 		)
 };
+register_acf_block_types(){
+	acf_register_block_type(
+		array(
+			'name'              => 'case-study-block',
+            'title'             => __('Case Study block '),
+            'description'       => __('Block to show subpages for case study'),
+            'render_template'   => 'loop-templates/blocks/case-study-block.php',
+            'category'          => 'formatting',
+            'icon'              => 'admin-comments',
+            'keywords'          => array( 'case-study-block', 'quote' ),
+
+		)
+		)
+};
+register_acf_block_types(){
+	acf_register_block_type(
+		array(
+			'name'              => 'single-case-study-block',
+            'title'             => __('Case Study Info'),
+            'description'       => __('Block to show single case study info'),
+            'render_template'   => 'loop-templates/blocks/single-case-study-block.php',
+            'category'          => 'formatting',
+            'icon'              => 'admin-comments',
+            'keywords'          => array( 'single-case-study-block', 'quote' ),
+
+		)
+		)
+};
