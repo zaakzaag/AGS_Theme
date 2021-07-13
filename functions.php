@@ -88,25 +88,7 @@ if(function_exists('acf_register_block_type')){
 }
 
 
-function get_breadcrumb() {
-    echo '<a href="'.home_url().'" rel="nofollow">Home</a>';
-    if (is_category() || is_single()) {
-        echo '&nbsp;&nbsp;<i class="fa fa-chevron-right" aria-hidden="true"></i>&nbsp;&nbsp;';
-        the_category(' &bull; ');
-            if (is_single()) {
-                echo '&nbsp;&nbsp;<i class="fa fa-chevron-right" aria-hidden="true"></i>&nbsp;&nbsp;'  ;
-                the_title();
-            }
-    } elseif (is_page()) {
-        echo '&nbsp;&nbsp;<i class="fa fa-chevron-right" aria-hidden="true"></i>&nbsp;&nbsp;';
-        echo the_title();
-    } elseif (is_search()) {
-        echo '&nbsp;&nbsp;<i class="fa fa-chevron-right" aria-hidden="true"></i>&nbsp;&nbsp;Search Results for... ';
-        echo '"<em>';
-        echo the_search_query();
-        echo '</em>"';
-    }
-}
+
 
 function filter_wpseo_breadcrumb_separator($this_options_breadcrumbs_sep) {
     return '&nbsp;&nbsp;<i class="fa fas fa-chevron-right"></i>&nbsp;&nbsp;';
@@ -244,20 +226,7 @@ register_acf_block_types(){
 		)
 };
 
-register_acf_block_types(){
-	acf_register_block_type(
-		array(
-			'name'              => 'case-study-block',
-            'title'             => __('Case Study block '),
-            'description'       => __('Block to show subpages for case study'),
-            'render_template'   => 'loop-templates/blocks/case-study-block.php',
-            'category'          => 'formatting',
-            'icon'              => 'admin-comments',
-            'keywords'          => array( 'case-study-block', 'quote' ),
 
-		)
-		)
-};
 register_acf_block_types(){
 	acf_register_block_type(
 		array(
@@ -282,6 +251,21 @@ register_acf_block_types(){
             'category'          => 'formatting',
             'icon'              => 'admin-comments',
             'keywords'          => array( 'single-case-study-block', 'quote' ),
+
+		)
+		)
+};
+
+register_acf_block_types(){
+	acf_register_block_type(
+		array(
+			'name'              => 'team-section',
+            'title'             => __('Team show block for team page'),
+            'description'       => __('Team showcase'),
+            'render_template'   => 'loop-templates/blocks/section-team.php',
+            'category'          => 'formatting',
+            'icon'              => 'admin-comments',
+            'keywords'          => array( 'section-team', 'quote' ),
 
 		)
 		)

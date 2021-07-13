@@ -1,0 +1,49 @@
+.section-team {
+	.person-column {
+		background-color: $agsDarkGray;
+		color: white;
+		padding: 50px;
+		position: relative;
+		font-family: "Myriad Pro Regular";
+		font-weight: normal;
+		min-height: 600px;
+
+		h5 {
+			font-size: 24px;
+		}
+		&:hover {
+			.person-info {
+				background-color: $agsBlue;
+				visibility: visible;
+			}
+		}
+		.person-info {
+			padding: 50px;
+			position: absolute;
+			display: flex;
+			height: 100%;
+			width: 100%;
+			left: 0px;
+			top: 0px;
+			flex-direction: column;
+			visibility: hidden;
+
+			&:hover {
+				visibility: visible;
+			}
+
+			.person-position {
+				font-size: 14px;
+				margin-bottom: 0.5rem;
+				text-transform: uppercase;
+			}
+			.person-desc {
+				color: #d3d3d3;
+			}
+		}
+
+		&:nth-child(even) {
+			background-color: $agsDark;
+		}
+	}
+}
