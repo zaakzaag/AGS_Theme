@@ -7,18 +7,32 @@
 		font-family: "Myriad Pro Regular";
 		font-weight: normal;
 		min-height: 600px;
+		transition: 0.4s;
 
 		h5 {
+			transition: 0.4s;
 			font-size: 24px;
 		}
 		&:hover {
 			.person-info {
+				transition: 0.4s;
 				background-color: $agsBlue;
 				visibility: visible;
+				opacity: 1;
+				h5 {
+					transition: 0.4s;
+				}
+				.person-position {
+					transition: 0.4s;
+				}
+				.person-desc {
+					transition: 0.4s;
+				}
 			}
 		}
 		.person-info {
 			padding: 50px;
+			padding-top: 200px;
 			position: absolute;
 			display: flex;
 			height: 100%;
@@ -27,17 +41,21 @@
 			top: 0px;
 			flex-direction: column;
 			visibility: hidden;
-
+			transition: 0.4s;
+			opacity: 0;
 			&:hover {
 				visibility: visible;
+				transition: 0.4s;
 			}
 
 			.person-position {
+				transition: 0.4s;
 				font-size: 14px;
 				margin-bottom: 0.5rem;
 				text-transform: uppercase;
 			}
 			.person-desc {
+				transition: 0.4s;
 				color: #d3d3d3;
 			}
 		}
